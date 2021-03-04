@@ -36,7 +36,7 @@ namespace TollFeeCalculator
                 }
 
                 if (totalFee >= 60)
-                    return totalFee;
+                    return 60;
 
                 oneHourCluster.Add(GetTollFee(orderedDates[i]));
             }

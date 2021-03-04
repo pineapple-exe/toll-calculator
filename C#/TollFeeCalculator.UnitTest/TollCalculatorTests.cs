@@ -26,8 +26,9 @@ namespace TollFeeCalculator.UnitTest
             //Multiple hour clusters
             new object[] { 54, new DateTime[] { new DateTime(2021, 3, 3, 6, 0, 0), new DateTime(2021, 3, 3, 6, 5, 0), new DateTime(2021, 3, 3, 6, 10, 0), new DateTime(2021, 3, 3, 6, 30, 0), new DateTime(2021, 3, 3, 6, 35, 0), new DateTime(2021, 3, 3, 6, 40, 0), new DateTime(2021, 3, 3, 7, 0, 0), new DateTime(2021, 3, 3, 7, 10, 0), new DateTime(2021, 3, 3, 7, 20, 0), new DateTime(2021, 3, 3, 8, 0, 0), new DateTime(2021, 3, 3, 8, 10, 0), new DateTime(2021, 3, 3, 8, 40, 0) } },
 
-            //Over 60 SEK
-            new object[] { 60, new DateTime[] { new DateTime(2021, 3, 4, 6, 35, 0), new DateTime(2021, 3, 4, 7, 36, 0), new DateTime(2021, 3, 4, 15, 40, 0), new DateTime(2021, 3, 4, 18, 0, 0) } }
+            // >= 60 SEK
+            new object[] { 60, new DateTime[] { new DateTime(2021, 3, 4, 6, 35, 0), new DateTime(2021, 3, 4, 7, 36, 0), new DateTime(2021, 3, 4, 15, 40, 0), new DateTime(2021, 3, 4, 16, 40, 0), new DateTime(2021, 3, 4, 18, 0, 0) } },
+            new object[] { 60, new DateTime[] { new DateTime(2021, 3, 4, 6, 0, 0), new DateTime(2021, 3, 4, 7, 0, 0), new DateTime(2021, 3, 4, 8, 0, 0), new DateTime(2021, 3, 4, 15, 0, 0), new DateTime(2021, 3, 4, 17, 0, 0) } }
         };
 
         [Test]
