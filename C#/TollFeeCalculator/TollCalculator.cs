@@ -28,7 +28,7 @@ namespace TollFeeCalculator
 
             for (int i = 0; i < orderedDates.Length; i++)
             {
-                if (Math.Abs(intervalStart.Hour - orderedDates[i].Hour) > 0)
+                if (orderedDates[i].Hour - intervalStart.Hour > 0)
                 {
                     totalFee += oneHourCluster.Max();
                     oneHourCluster.Clear();
